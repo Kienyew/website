@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>甜品</title>
+		<style type="text/css">
+
+			@media only screen and (min-width: 300px) {
+				.row {
+					flex-direction: column;
+				}
+
+				.column {
+					width: 100%;
+					margin-bottom: 1em;
+					position: relative;
+				}
+			}
+
+			@media only screen and (min-width: 420px) {
+				.row {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					flex-wrap: wrap;
+					margin: 0 .5em 0 .5em;
+				}
+
+				.row .column:last-child {
+					width: 60%;
+					margin: auto;
+				}
+
+				.column {
+					/*flex: 1 0 auto;*/
+					width: 50%;
+					
+				}
+			}
+
+			@media only screen and  (min-width: 768px) {
+				.row .column:last-child {
+					width: 33%;
+				}
+
+				.column {
+					width: 33%;
+					margin-bottom: 0;
+				}
+			}
+
+			@media  only screen and  (min-width: 992px) {
+				
+			}
+
+			@media  only screen and  (min-width: 1200px) {
+
+			}
+
+			body {
+				height: 100%;
+				margin: 0;
+				margin-bottom: 1.5em;
+				background-image: url(./images/seamless-513x513.jpg)
+			}
+
+			* {
+				font-family: "Microsoft YaHei", "Sans serif";
+				color: #222;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.jumbotron {
+				display: flex;
+				height: 100vh;
+				background-image: url(./images/black-coffee-1867753_1920.jpg);
+			}
+
+			.background-image-center {
+				background-size: cover;
+				background-position: center;
+			}
+
+			.vignette {
+				box-shadow: 0 0 100px 50px rgba(0,0,0,0.5) inset;
+			}
+
+			.jumbotron-wrapper {
+				display: flex;
+				width: 100%;
+			}
+
+			.title {
+				align-self: center;
+				margin: auto;
+				text-align: center;
+				font-size: 5em;
+				color: whitesmoke;
+			}
+
+			.text-shadow-lg {
+				text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+			}
+
+			.text-center {
+				text-align: center;
+			}
+
+
+			.col-wrapper {
+				margin: 0 .75em 0 .75em;
+			}
+
+			.col-box {
+				box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+				border-radius: 5px 5px 0 0;
+				overflow: hidden;
+				transition: .2s;
+			}
+
+			.col-image-container {
+				overflow: hidden;
+			}
+
+			.col-image-container > img {
+				transition: transform .5s;
+				transition-timing-function: ease-in-out;
+			}
+			.col-image-container > img:hover {
+				transform: scale(1.05) rotate(1deg);
+			}
+
+			.content-wrapper {
+				padding: .75em;
+				background-color: rgba(255,255,255,0.9);
+			}
+
+			.content-wrapper a {
+				margin: auto;
+				display: block;
+				text-align: center;
+				border-radius: 2px;
+				border: 1px solid #f3d18c;
+				background-color: #fed99b;
+				padding: .2em;
+				width: 33%;
+				color: #846267;
+				transition: .2s;
+			}
+
+			.content-wrapper a:hover{
+				cursor: pointer;
+				border-radius: 5px;
+				border: 1px solid #fed99b;
+				background-color: #fed18c;
+			}
+
+			h3 {
+				color: #b87d4b;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron background-image-center vignette">
+			<div class="jumbotron-wrapper">
+				<h1 class="title text-shadow-lg">一个大标题</h1>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 1em;">
+			<div class="column">
+				<div class="col-wrapper">
+					<div class="col-box">
+						<div class="col-image-container">
+							<img src="./images/macaron/macaron-513x513.jpg" style="width: 100%; display: block;">
+						</div>
+						<div class="content-wrapper">
+							<h3 class="text-center">马卡龙 MACARON</h3>
+							<p class="text-center">
+							马卡龙，又称作玛卡龙、法式小圆饼，是一种用蛋白、杏仁粉、白砂糖和糖霜制作，并夹有水果酱或奶油的法式甜点。口感丰富，外脆内柔，外观五彩缤纷，精致小巧。
+							</p>
+							<a href="#">了解一下</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="col-wrapper">
+					<div class="col-box">
+						<div class="col-image-container">
+							<img src="./images/profiterole/profiterole-513x513.jpg" style="width: 100%; display: block;">
+						</div>
+						<div class="content-wrapper">
+							<h3 class="text-center">泡芙 PUFF</h3>
+							<p class="text-center">
+								泡芙是一种源自意大利的甜食。蓬松张空的奶油面皮中包裹着奶油、巧克力乃至冰淇淋。制作时使用水、汉密哈顿奶油、面和蛋做包裹的面包。
+							</p>
+							<a href="#">了解一下</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="col-wrapper">
+					<div class="col-box">
+						<div class="col-image-container">
+							<img src="./images/tart/tart-513x513.jpg" style="width: 100%; display: block;">
+						</div>
+						<div class="content-wrapper">
+							<h3 class="text-center">挞类 TART</h3>
+							<p class="text-center">
+								挞，是一种烤焗食品，属于西式馅饼的一个种类，特征是馅料外露。所使用的外皮大多是挞皮。馅料可以是甜的或者是咸味的，甜的一般是使用水果，有时以奶黄做为馅料。
+							</p>
+							<a href="#">了解一下</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 1em;">
+			<div class="column">
+				<div class="col-wrapper">
+					<div class="col-box">
+						<div class="col-image-container">
+							<img src="./images/pie/pie-513x513.jpg" style="width: 100%; display: block;">
+						</div>
+						<div class="content-wrapper">
+							<h3 class="text-center">派类 PIE</h3>
+							<p class="text-center">
+								派，源于的英语 "pie"，是一种烤焗食品，由饼皮包着馅料；馅料可以是各类型的食品，例如肉类、蔬菜、水果及蛋酱等。
+							</p>
+							<a href="#">了解一下</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="col-wrapper">
+					<div class="col-box">
+						<div class="col-image-container">
+							<img src="./images/mousse/mousse-513x513.jpg" style="width: 100%; display: block;">
+						</div>
+						<div class="content-wrapper">
+							<h3 class="text-center">慕斯 MOUSSE</h3>
+							<p class="text-center">
+								慕斯是一种以慕斯粉为主材料的糕点。外型、色泽、结构、口味变化丰富，更加自然纯正，通常是加入奶油与凝固剂来制作成浓稠冻状的效果。
+							</p>
+							<a href="#">了解一下</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="col-wrapper">
+					<div class="col-box">
+						<div class="col-image-container">
+							<img src="./images/donut/donut-513x513.jpg" style="width: 100%; display: block;">
+						</div>
+						<div class="content-wrapper">
+							<h3 class="text-center">甜甜圈 DONUT</h3>
+							<p class="text-center">
+								甜甜圈是一种用面粉、白砂糖、奶油和鸡蛋混合之后再经过油炸的甜食。甜甜圈最普遍的两种形状是中空的环状、或面团中间有包入奶油、蛋浆（泛指蛋打成的液体）等甜馅料的封闭型甜甜圈。
+							</p>
+							<a href="#">了解一下</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 1em;">
+			<div class="column">
+				<div class="col-wrapper">
+					<div class="col-box">
+						<div class="col-image-container">
+							<img src="./images/cake/cake-513x513.jpg" style="width: 100%; display: block;">
+						</div>
+						<div class="content-wrapper">
+							<h3 class="text-center">蛋糕 CAKE</h3>
+							<p class="text-center">
+								蛋糕是一种古老的西点，一般是由烤箱制作的，蛋糕是用鸡蛋、白糖、小麦粉为主要原料。以牛奶、果汁、奶粉、香粉、色拉油、水，起酥油、泡打粉为辅料。经过搅拌、调制、烘烤后制成一种像海绵的点心。
+							</p>
+							<a href="#">了解一下</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="col-wrapper">
+					<div class="col-box">
+						<div class="col-image-container">
+							<img src="./images/chocolate/chocolate-513x513.jpg" style="width: 100%; display: block;">
+						</div>
+						<div class="content-wrapper">
+							<h3 class="text-center">巧克力 CHOCOLATE</h3>
+							<p class="text-center">
+								巧克力是以可可浆和可可脂为主要原料制成的一种甜食。它不但口感细腻甜美，而且还具有一股浓郁的香气。
+							</p>
+							<a href="#">了解一下</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+			function randomChoice(list) {
+				if (list.length === 0) {
+					throw Error('empty list.');
+				}
+
+				return list[Math.floor(Math.random() * list.length)];
+			}
+
+			window.onload = function() {
+				document.getElementsByClassName('title')[0].innerText = randomChoice([
+					'一个大标题',
+					'标题',
+					]);
+			}
+		</script>
+	</body>
+</html>
