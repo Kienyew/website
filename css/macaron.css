@@ -1,0 +1,29 @@
+
+.box {
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.flavours-container {
+  padding: 1em;
+}
+
+.flavour-box {
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin: .5em;
+}
+
+.flavour-img {
+  display: block;
+  width: 100%;
+}
+
+.flavour-content {
+  padding: .5em;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.flavour-title {
+  text-align: center;
+  color: #333;
+}

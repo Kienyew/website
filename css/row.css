@@ -1,0 +1,39 @@
+@media only screen and (min-width: 500px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .col {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .col {
+    width: 50%;
+  }
+}
+
+.row-nostack {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-nostack {
+  width: 50%;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column；
+}
+
+.stack-col {
+  
+}

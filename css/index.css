@@ -1,0 +1,129 @@
+@media only screen and (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+    margin-bottom: 1em;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 .5em 0 .5em;
+  }
+  .row .column:last-child {
+    width: 70%;
+    margin: auto;
+    margin-top: 1em;
+  }
+  .column {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row .column:last-child {
+    width: 33%;
+  }
+  .column {
+    width: 33%;
+    margin-bottom: 0;
+  }
+  .nav-list {
+    flex-direction: row;
+  }
+}
+
+body {
+  
+}
+
+.box {
+  margin: 1em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.background-image-center {
+  background-size: cover;
+  background-position: center;
+}
+
+.vignette {
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5) inset;
+}
+
+
+
+.title {
+  font-size: 5em;
+  color: lightcoral;
+}
+
+.col-box-wrapper {
+  margin: 0 .75em 0 .75em;
+}
+
+.col-box {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  transition: .2s;
+}
+
+.col-image-container {
+  overflow: hidden;
+}
+
+.col-image-container>img {
+  transition: transform .5s;
+  transition-timing-function: ease-in-out;
+}
+
+.col-image-container>img:hover {
+  transform: scale(1.025) rotate(.3deg);
+}
+
+.content-wrapper {
+  padding: .75em;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.content-wrapper a {
+  margin: auto;
+  display: block;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #f3d18c;
+  background-color: #fed99b;
+  padding: .2em;
+  width: 33%;
+  color: #846267;
+  transition: .2s;
+}
+
+.content-wrapper a:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #fed99b;
+  background-color: #fed18c;
+}
+
+.food-title {
+  color: #b87d4b;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 0;
+}
