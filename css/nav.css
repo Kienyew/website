@@ -28,8 +28,8 @@
   transition: background-color .2s;
 }
 
-.nav-list>.nav-item>a {
-  color: rgb(61, 42, 0, 0.8);
+.nav-link {
+  color: rgb(61, 42, 0, 1);
 }
 
 .nav-list>.nav-item:hover {
@@ -40,4 +40,8 @@
 .nav-item>.nav-link {
   display: block;
   padding: 1em 1em;
+}
+
+.nav-link.active {
+  color: #b87d4b;
 }

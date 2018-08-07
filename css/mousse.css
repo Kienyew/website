@@ -4,15 +4,17 @@
 }
 
 .flavour-container {
-  padding: 2em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 1em;
 }
 
 
 .flavour-title {
-	color: #765218;
+  color: #765218;
+  margin-top: .5em;
 }
 
 .flavour-img {
